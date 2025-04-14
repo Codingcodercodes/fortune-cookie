@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fortune Cookie Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark"> <!-- Default theme set to dark -->
+  <div class="corner-decoration top-left">🌟</div>
+  <div class="corner-decoration top-right">✨</div>
+  <div class="corner-decoration bottom-left">🍀</div>
+  <div class="corner-decoration bottom-right">🌈</div>
+
+  <div class="container">
+    <h1>🍪 Fortune Cookie Generator</h1>
+    <h2>(Choose your mood!)</h2>
+
+    <!-- Category Buttons -->
+    <div class="category-buttons">
+      <button class="btn motivational-btn" onclick="setCategory('motivational')">💪 Motivation</button>
+      <button class="btn funny-btn" onclick="setCategory('funny')">😂 Funny</button>
+      <button class="btn spooky-btn" onclick="setCategory('spooky')">👻 Spooky</button>
+    </div>
+
+    <!-- Fortune Cookie Image -->
+    <div class="cookie">
+      <img src="image.png" alt="Fortune Cookie" id="cookie-img" onclick="crackCookie()" />
+    </div>
+
+    <!-- Fortune Text Display -->
+    <div class="fortune-text" id="fortune-text">Click the cookie to reveal your fortune!</div>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle btn toggle-btn" onclick="toggleTheme()">🌙 Toggle Theme</button>
+  </div>
+
+  <!-- Mood-Based Emoji Container -->
+  <div id="emoji-container"></div>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Default Dark Mode Styling */
+body.dark {
+  background-color: #2c2c2c; /* Dark Background */
+  color: #fff; /* Light Text Color */
+}
+
+body.light {
+  background-color: #ffffff; /* Light Background */
+  color: #000; /* Dark Text Color */
+}
+
+/* Container Styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 50px);
+}
+
+/* Fortune Text Styling */
+.fortune-text {
+  font-size: 1.6em;
+  font-weight: bold;
+  font-style: italic;
+  background-color: #ffc0cb; /* Baby Pink */
+  color: #000;
+  padding: 30px;
+  border-radius: 16px;
+  margin-top: 30px;
+  min-height: 100px;
+  min-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Corner Decorations */
+.corner-decoration {
+   position: absolute;
+   font-size: 2em;
+}
+
+.top-left { top: 10px; left: 10px; }
+.top-right { top: 10px; right: 10px; }
+.bottom-left { bottom: 10px; left: 10px; }
+.bottom-right { bottom: 10px; right: 10px; }
+
+/* Mood-Based Emoji Container */
+#emoji-container {
+   position: fixed;
+   top: calc(50% - 50px);
+   left: calc(50% - 50px);
+   display: none;
+}
+
+/* Button Styling */
+.btn {
+  margin: 10px;
+  padding: 15px 25px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.motivational-btn {
+   background-color: #4CAF50; /* Green */
+   color: white;
+}
+
+.funny-btn {
+   background-color:#FFD700; /* Yellow */
+   color:#000
+}
+
+.spooky-btn{
+   background-color:#7A288A; /* Purple */
+   color: white;
+}
+
+/* Hover Effects */
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Dark Mode Adjustments */
+body.dark .fortune-text {
+  background-color: #333; /* Dark Fortune Box */
+  color: #fff; /* Light Text Color */
+}
+
+body.dark button {
+  background-color: #444; /* Dark Buttons */
+  color: #fff; /* Light Button Text Color */
+}
+
+body.dark .cookie img {
+  filter: brightness(0.7); /* Dim Cookie Image */
+}
